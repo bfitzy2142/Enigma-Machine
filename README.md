@@ -7,7 +7,7 @@ On a physical Enigma machine, each keypress would show up on what is called the 
 To break down the Enigma's operation simply, when the operator presses a key, an electric connection is made from the key, through three rotors bidirectionally. The complex electrical connection ends at the lampboard which displays the unique encrypted character. The magic happens with what are called the rotors. The rotors apply a letter substitution encryption scheme. Each rotor has a different configuration. Every time a key is pressed, one or more rotors rotate which completely changes the electrical path the same letter would take on the next key press. This project emulates the complex electrical connections driving the Enigma encryption algorithm.
 
 ## Enigma Components
-Like a real Enigma operator in the field, you have the same settings at your disposal provide security to your messages.
+Like a real Enigma operator in the field, you have the same settings at your disposal to provide security to your messages.
 
 *The important parameters to understand are the following:*
 
@@ -52,7 +52,7 @@ EKMFLGDQVZNTOWYHXUSPAIBRCJ
 FLNGMHERWAOUPXZIYVTQBJCSDK
 ```
 
-- step 2: Shift the alignment of the new output 1 place to the right
+- Step 2: Shift the alignment of the new output 1 place to the right
 ```
 FLNGMHERWAOUPXZIYVTQBJCSDK
 		becomes
@@ -103,3 +103,7 @@ To run my Enigma emulator simply run:
 ```
 python3 enigma_machine.py
 ```
+
+## Usage Example
+
+![Screenshot from 2020-12-16 21-22-39](https://user-images.githubusercontent.com/44167644/102435744-1fe39000-3fe5-11eb-8cf4-22fc1d5ccea6.png)
