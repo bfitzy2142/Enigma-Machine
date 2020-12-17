@@ -1,7 +1,7 @@
 # The Enigma
 The Enigma Machine is an encryption tool used by the Germans during the second world war to secure their communications. 
 
-On a physical Enigma machine, each keypress would show up on what is called the lamp board providing the cyphertext.The Enigma algorithm is symmetrical meaning that the original text can be obtained by entering cyphertext back into the machine with the same settings used to encrypt. 
+On a physical Enigma machine, each keypress would show up on what is called the lamp board providing the ciphertext.The Enigma algorithm is symmetrical meaning that the original text can be obtained by entering ciphertext back into the machine with the same settings used to encrypt. 
 
 
 To break down the Enigma's operation simply, when the operator presses a key, an electric connection is made from the key, through three rotors bidirectionally. The complex electrical connection ends at the lampboard which displays the unique encrypted character. The magic happens with what are called the rotors. The rotors apply a letter substitution encryption scheme. Each rotor has a different configuration. Every time a key is pressed, one or more rotors rotate which completely changes the electrical path the same letter would take on the next key press. This project emulates the complex electrical connections driving the Enigma encryption algorithm.
@@ -68,7 +68,7 @@ ring_positions = [2,6,8]
 - Rotor in position 2 (middle) will be at ring setting 6
 - Rotor in position 3 (rightmost) will be at ring setting 8
 
-### Plugboard Connecitons
+### Plugboard Connections
 A plugboard is similar to an old-fashioned telephone switch board that has ten wires, each wire having two ends that can be plugged into a slot. Each plug wire can connect two letters to be a pair (by plugging one end of the wire to one letter’s slot and the other end to another letter). The two letters in a pair will swap over, so if “A” is connected to “Z,” “A” becomes “Z” and “Z” becomes “A.” This provides an extra level of scrambling.
 
 Plugboard parameters can be specified like so
