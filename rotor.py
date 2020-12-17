@@ -7,7 +7,7 @@ class Rotor():
     scrambling happens by substituting one letter by another, the parameters
     of which change each time a letter passes through with rotor rotation. Some
     parameters are setup beforehand by the Enigma operator such as the ring
-    setting (Ringstellung in German), and inital rotor postion. The rotor
+    setting (Ringstellung in German), and initial rotor postion. The rotor
     settings along with the plugboard are what make the Enigma secure.
     To be exact, the Enigma has 158,962,555,217,826,360,000
     different settings.
@@ -22,7 +22,7 @@ class Rotor():
     """
 
     def __init__(self, rotor_string, position, rotor_number, ring_position):
-        """initator for rotor class
+        """initiator for rotor class
 
         Args:
             rotor_string ([str): 26 letter scrambled encoding scheme
@@ -31,7 +31,7 @@ class Rotor():
             26 letter encoding stack
 
             rotor_number (int): marks the rotor type (typically 1 to 5)
-            ring_position (int): Changes the inital mapping from ab..z to
+            ring_position (int): Changes the initial mapping from ab..z to
             a shifted postion left by rotor_number positions
 
             For details on how an actual rotor works:
@@ -99,7 +99,7 @@ class Rotor():
 
     def apply_ring_setting(self, input_char):
         """returns amount of positions to shift
-           the origial rotor char configuration
+           the original rotor char configuration
 
         Args:
             input_char (str): char to be shifted

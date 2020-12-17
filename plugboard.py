@@ -97,6 +97,6 @@ class Plugboard():
         """returns plugboard list
 
         Returns:
-            list: plugboard connecitons
+            list: plugboard connections
         """
         return self.links

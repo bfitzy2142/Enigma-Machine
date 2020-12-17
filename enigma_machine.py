@@ -7,7 +7,7 @@ from plugboard import Plugboard
 class EnigmaMachine():
 
     """
-    A programmatic implementation of the infamious Enigma encryption algorithm.
+    A programmatic implementation of the infamous Enigma encryption algorithm.
 
     To be honest, I made this because I was
     bored and this felt like a challenge.
@@ -139,7 +139,7 @@ class EnigmaMachine():
 
         Args:
             char_index (int): index of char within
-            alaphabit list (i.e 0 = A, 1 = B, etc)
+            alphabit list (i.e 0 = A, 1 = B, etc)
 
         Returns:
             int: index of transformed char
@@ -158,11 +158,12 @@ class EnigmaMachine():
             rotor_input_left = rotor.use_rotor(rotor_input_left, "left")
 
         # Run letter through reflector
-        reflector_ouput = self.calculate_reflection(rotor_input_left,
+        reflector_output = self.calculate_reflection(
+                                                    rotor_input_left,
                                                     self.reflector
                                                     )
 
-        rotor_input_right = reflector_ouput
+        rotor_input_right = reflector_output
 
         # Move letter through rotors from right to left
         for rotor in self.rotor_list:
@@ -301,7 +302,7 @@ class EnigmaMachine():
 
 
 def main():
-    """This provides basic funcationality of this program.
+    """This provides basic functionality of this program.
     I designed the EnigmaMachine class so that it could be
     called upon by another module in the future if need be.
     """
@@ -309,7 +310,7 @@ def main():
     # Rotor Selection and Order
     rotor_selection = [2, 4, 5]
 
-    # Rotor inital position
+    # Rotor initial position
     rotor_settings = [25, 1, 6]
 
     # Ring setting (Ringstellung)
